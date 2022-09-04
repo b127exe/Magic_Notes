@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Magic Notes</h2>
+        <form action="input">
+            <input type="text" placeholder="Search Notes" id="SearchNote">
+        </form>
+    </div>
+
+     <div class="Add-container">
+        <form class="form">
+           <strong>Create a Note</strong>
+           <div class="title">
+             <label>Add Title</label>
+             <input type="text" placeholder="Write your title" id="addTitle"> 
+           </div>
+           <div class="Note">
+            <label for="addTxt">Add Note</label>
+            <textarea rows="3" id="addTxt" placeholder="Write your note"></textarea>
+           </div>
+           <button class="btn" type="button" id="addBtn">Add Note</button>
+        </form>
+     </div>
+  
+
+    <div class="Grid-box" id="NotesBox">
+        
+    </div>
+
+
+    <script src="JS/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

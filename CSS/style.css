@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(202, 202, 202);
+}
+/* For Header */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    margin: 20px 0 50px 0;
+}
+
+.container h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #333;
+}
+
+h2::after {
+    content: "";
+    position: relative;
+    border-left: 2px solid #333;
+    left: -260px;
+}
+
+form input {
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    appearance: none;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+form input:focus {
+    outline: none;
+}
+
+/* For Create Notes */
+.Add-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    height: auto;
+    min-width: 700px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.form strong{
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    display: block;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title label{
+    font-size: 22px;
+    color: #333;
+    align-self: flex-start;
+}
+.title input{
+    width: 100%;
+    border-radius: 10px;
+}
+.Note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+.Note label{
+    font-size: 22px;
+    align-self: flex-start;
+    color: #333;
+}
+.Note textarea {
+    width: 100%;
+    resize: vertical;
+    border-radius: 10px;
+    padding: 8px;
+    appearance: none;
+    border: 1px solid #333;
+}
+textarea:focus{
+    outline: none;
+}
+.btn{
+    font: 22px;
+    background: transparent;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+.btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+.Delete{
+   margin: 90px 0 0 0;
+}
+/* For All Notes */
+.Grid-box {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto;
+    margin: 10px;
+}
+
+.grid-child {
+    border: 1px solid #000;
+    border-radius: 10px;
+    min-height: 200px;
+    background-color: #fff;
+}
+.stock-note{
+    padding: 10px;
+}
+.stock-note strong{
+    font-size: 20px;
+    font-weight: 600;
+}
+.stock-note p{
+    font-size: 14px;
+}
+
+/* For Responsive */
+@media screen and (max-width:1024px) {
+    .Grid-box {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:780px){
+    .container{
+     flex-wrap: wrap;
+    }
+    .container form{
+        margin-top: 15px;
+    }
+    .form{
+        min-width: 500px;
+    }
+}
+@media screen and (max-width:530px){
+    .form{
+        min-width: 350px;
+    }
+}
