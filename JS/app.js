@@ -80,7 +80,7 @@ function RemoveNote(index) {
 let SearchNote = document.getElementById('SearchNote');
 SearchNote.addEventListener('input', function () {
 
-    let InpVal = document.getElementById('SearchNote').value.toLowerCase();
+    let InpVal = document.getElementById('SearchNote').value.toUpperCase();
     let grid_child = document.getElementsByClassName('grid-child');
 
     Array.from(grid_child).forEach(function (element) {
