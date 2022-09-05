@@ -80,14 +80,14 @@ function RemoveNote(index) {
 let SearchNote = document.getElementById('SearchNote');
 SearchNote.addEventListener('input', function () {
 
-    let InpVal = document.getElementById('SearchNote').value.toUpperCase();
+    let InpVal = document.getElementById('SearchNote').value;
     let grid_child = document.getElementsByClassName('grid-child');
 
     Array.from(grid_child).forEach(function (element) {
 
         let cardTitle = element.getElementsByTagName('strong')[0].innerHTML;
 
-        if (cardTitle.includes(InpVal)) {
+        if (cardTitle.toUpperCase().includes(InpVal.toUpperCase())) {
             element.style.display = 'block';
         }
         else {
